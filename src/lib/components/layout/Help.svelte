@@ -4,10 +4,12 @@
 	const i18n = getContext('i18n');
 
 	import ShortcutsModal from '../chat/ShortcutsModal.svelte';
+	import AccessibilityModal from '../chat/AccessibilityModal.svelte';
 	import Tooltip from '../common/Tooltip.svelte';
 	import HelpMenu from './Help/HelpMenu.svelte';
 
 	let showShortcuts = false;
+	let showAccessibility = false;
 </script>
 
 <div class=" hidden lg:flex fixed bottom-0 right-0 px-2 py-2 z-20">
@@ -19,6 +21,14 @@
 		}}
 	/>
 
+	<button
+	id="show-accessibility-button"
+	class="hidden"
+	on:click={() => {
+		showAccessibility = !showAccessibility;
+	}}
+/>
+
 	<HelpMenu
 		showDocsHandler={() => {
 			showShortcuts = !showShortcuts;
@@ -26,6 +36,13 @@
 		showShortcutsHandler={() => {
 			showShortcuts = !showShortcuts;
 		}}
+		showAccessibilityHandler={() => {
+			showShortcuts = !showShortcuts;
+		}}
+		showHelpDeskHandler={() => {
+			showShortcuts = !showShortcuts;
+		}}
+			
 	>
 		<Tooltip content={$i18n.t('Help')} placement="left">
 			<button
@@ -38,3 +55,4 @@
 </div>
 
 <ShortcutsModal bind:show={showShortcuts} />
+<AccessibilityModal bind:show={showAccessibility} />
