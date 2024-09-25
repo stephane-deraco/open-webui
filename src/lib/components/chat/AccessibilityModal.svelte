@@ -55,6 +55,7 @@
             <p>Cette procédure est à utiliser dans le cas suivant.<br>Vous avez signalé au référent accessibilité du CNRS un
               défaut d’accessibilité qui vous empêche d’accéder à un contenu ou à un service et vous n’avez pas obtenu de réponse
               satisfaisante.<br>
+			</p>
             <ul>
               <li>Écrire un message au Défenseur des droits :<br>
                 <a href="https://formulaire.defenseurdesdroits.fr/formulaire_saisine/"
@@ -69,7 +70,7 @@
                 Libre réponse 71120 <br>
                 75342 Paris CEDEX 07</li>
             </ul>
-            </p>
+            
 
 
 
