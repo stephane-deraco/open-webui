@@ -22,12 +22,12 @@
 	/>
 
 	<button
-	id="show-accessibility-button"
-	class="hidden"
-	on:click={() => {
-		showAccessibility = !showAccessibility;
-	}}
-/>
+		id="show-accessibility-button"
+		class="hidden"
+		on:click={() => {
+			showAccessibility = !showAccessibility;
+		}}
+	/>
 
 	<HelpMenu
 		showDocsHandler={() => {
@@ -42,7 +42,6 @@
 		showHelpDeskHandler={() => {
 			showShortcuts = !showShortcuts;
 		}}
-			
 	>
 		<Tooltip content={$i18n.t('Help')} placement="left">
 			<button
